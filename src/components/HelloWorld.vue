@@ -20,7 +20,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   background-color: #1F1F1F; /* Color extraído del manual de marca */
 }
 
