@@ -1,10 +1,17 @@
 <script setup>
+import menuPortada from './components/menuPortada.vue';
 import HelloWorld from './components/HelloWorld.vue'
+import footerPrincipal from './components/footerPrincipal.vue';
 </script>
 
 <template>
-
-  <HelloWorld />
+  <div>
+    <menuPortada/>
+    <br>
+    <HelloWorld />
+    <br>
+    <footerPrincipal />
+  </div>
 </template>
 
 <style scoped>

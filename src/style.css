@@ -1,79 +1,86 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --primary-color: #14133b; /* Color principal extraído del manual de marca */
+  --secondary-color: #1F1F1F; /* Color secundario extraído del manual de marca */
+  --background-color: #F2F2F2; /* Color de fondo extraído del manual de marca */
+  --text-color: #333333; /* Color de texto principal */
+  --accent-color: #457B9D; /* Color de acento extraído del manual de marca */
+  --navbar-color: rgba(46, 51, 78, 0.97); /*#2E334E; /* Color del navbar */
+  --navbar-color-logo: rgba(46, 51, 78, 0.9) ;
+  --footer-color:#2E334E;
+  /*--menu-text-color: #c0df16; /* Color de las letras del menú */
+  --menu-text-color: #F2F2F2;
+  --font-family: 'Poppins', sans-serif; /* Tipografía extraída del manual de marca */
+  --title-font: 'Poppins', sans-serif; /* Tipografía para títulos */
 }
 
 body {
-  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font);
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--primary-color), 10%);
+  border-color: darken(var(--primary-color), 10%);
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+.navbar {
+  background-color: var(--navbar-color);
+  font-weight: bold;
+  
+}
+
+.bg-custom {
+  background-color: var(--navbar-color) !important;
+}
+
+.navbar-brand, .nav-link {
+  color: var(--menu-text-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.navbar-collapse {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  justify-content: flex-end;
 }

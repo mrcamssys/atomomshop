@@ -1,12 +1,15 @@
 <template>
-  <div class="maintenance-container">
-    <div class="maintenance-card">
-      <img src="/imagenes/logo.png" alt="Logo" class="logo" />
-      <h1>Estamos en mantenimiento</h1>
-      <p>Volveremos pronto con mejoras para ti.</p>
-      <div class="loading-spinner"></div>
-    </div>
+  <div class="container">
+    <div class="maintenance-container">
+      <div class="maintenance-card">
+        <img src="/imagenes/logo.png" alt="Logo" class="logo" />
+        <h1>Estamos en mantenimiento</h1>
+        <p>Volveremos pronto con mejoras para ti.</p>
+        <div class="loading-spinner"></div>
+      </div>
+    </div>    
   </div>
+
 </template>
 
 <script>
@@ -21,7 +24,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: #1F1F1F; /* Color extraído del manual de marca */
+ /* background-color: #1F1F1F; /* Color extraído del manual de marca */
 }
 
 .maintenance-card {
@@ -38,7 +41,7 @@ export default {
 }
 
 h1 {
-  color: #E63946; /* Color extraído del manual de marca */
+  color: #14133b; /* Color extraído del manual de marca */
   font-size: 2rem;
 }
 
