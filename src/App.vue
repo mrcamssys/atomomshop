@@ -1,15 +1,17 @@
 <script setup>
+import { RouterView } from 'vue-router';
 import menuPortada from './components/menuPortada.vue';
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
 import footerPrincipal from './components/footerPrincipal.vue';
 </script>
 
 <template>
   <div>
     <menuPortada/>
-    <br>
-    <HelloWorld />
-    <br>
+    
+    <!--<HelloWorld />-->
+    <RouterView />
+    
     <footerPrincipal />
   </div>
 </template>
