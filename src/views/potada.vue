@@ -61,7 +61,7 @@
     const carouselElement = document.getElementById('carouselExample');
     if (carouselElement) {
       new bootstrap.Carousel(carouselElement, {
-        interval: 3000, // Cambia cada 3 segundos
+        interval: 5000, // Cambia cada 3 segundos
         ride: 'carousel'
       });
     }
