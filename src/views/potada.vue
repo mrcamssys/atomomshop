@@ -1,4 +1,9 @@
 <template>
+  <div>
+    <!-- Banner con imagen dinámica -->
+    <Banner :imageSrc="imagenActual" />
+
+
     <div id="carouselExample" class="carousel slide carousel-fade">
       
       <div class="carousel-inner">
@@ -29,6 +34,11 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+
+
+  </div>
+    
   </template>
   
   <script setup>

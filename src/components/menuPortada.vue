@@ -53,11 +53,32 @@ export default {
                     active: true,
                     icon: "bi bi-house"
                 },
+                
+                {
+                    name: "Vision",
+                    link: "/Vision",
+                    icon: "bi bi-boxes"
+                },
+
+                {
+                    name: "Mision",
+                    link: "/mision",
+                    icon: "bi bi-bookmarks-fill"
+                },
+
+                {
+                    name: "Portafolio",
+                    link: "/portafolio",
+                    icon: "bi bi-clipboard-data"
+                },
+
                 {
                     name: "Contacto",
                     link: "/about",
                     icon: "bi bi-envelope"
                 }
+
+
             ],
             menuItemsURL: [
                 /*
