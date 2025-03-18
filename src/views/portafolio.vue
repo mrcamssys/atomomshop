@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner :imageSrc="imagenActual" />
+    <Banner imageSrc='/imagenes/banner-portafolio.png' />
     <div class="container mt-5">
       <h2 class="text-primary text-center mb-4">Portafolio de Servicios</h2>
       <p class="text-center">
@@ -28,17 +28,15 @@
 </template>
 
 <script>
+
 import Banner from '../components/Banner.vue';
+
 export default {
+  name: "portafolio",
   components: {
     Banner
   },
-  methods: {
-    cambiarImagen() {
-      // Alternar entre imágenes dinámicamente
-      this.imagenActual = '/imagenes/banner-portafolio.png'
-    }
-  },
+
   data() {
     return {
       services: [

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Banner :imageSrc="imagenActual" />
+        <Banner imageSrc='/imagenes/banner-vision.webp' />
         <div class="container mt-5">
             <div class="card shadow">
                 <div class="card-body">
@@ -47,7 +47,7 @@ export default {
     methods: {
         cambiarImagen() {
             // Alternar entre imágenes dinámicamente
-            this.imagenActual = '/imagenes/banner-vision.webp'
+            this.imagenActual = '/imagenes/banner-mision.webp'
         }
     }
 };

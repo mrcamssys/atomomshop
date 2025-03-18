@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Banner con imagen dinámica -->
-    <Banner :imageSrc="imagenActual" />
+    <Banner imageSrc='/imagenes/banner-mision.webp' />
 
     <div class="container mt-5">
       <div class="card shadow">
