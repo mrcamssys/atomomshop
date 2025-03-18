@@ -8,6 +8,7 @@ import About from "./views/contacto.vue"
 import vision from "./views/Vision.vue"
 import mision from "./views/mision.vue"
 import portafolio from "./views/portafolio.vue"
+import NotFound from './views/NotFound.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -15,7 +16,7 @@ const routes = [
   { path: '/mision', component: mision },
   { path: '/portafolio', component: portafolio },
   { path: '/about', component: About },
-
+  { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound } // Ruta 404
 ];
 
 const router = createRouter({
