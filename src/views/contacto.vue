@@ -1,4 +1,7 @@
 <template>
+    <div>
+    <!-- Banner con imagen dinámica -->
+    <Banner imageSrc='/imagenes/portada/ejp2.webp' />
     <div class="container mt-5">
       <div class="card shadow-lg p-4 text-center">
         <h2 class="mb-3">Contáctanos</h2>
@@ -18,11 +21,17 @@
         </a>
       </div>
     </div>
+    </div>
     <br><br>
   </template>
   
   <script>
-  export default {
+import Banner from '../components/Banner.vue';
+
+export default {
+  components: {
+    Banner
+  },
     name: "Contacto",
   };
   </script>
